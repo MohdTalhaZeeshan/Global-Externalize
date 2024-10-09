@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	
+	<flow name="learning-externalizeFlow" doc:id="50ad25a7-7b4c-4de7-856c-15631eb30df1" >
+		<http:listener doc:name="Listener" doc:id="bbf46bd6-cf05-43e2-99c3-5d5348647a1d" config-ref="HTTP_Listener_config" path="test"/>
+		<set-payload value="Hello Mule" doc:name="Set Payload" doc:id="05904428-de90-4474-aac2-3f636f5ef218" />
+	</flow>
+</mule>
